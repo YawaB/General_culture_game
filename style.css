@@ -24,15 +24,14 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
 .welcome{
-  font-family: "Lucida Calligraphy";
-
+    color: #10454F;
 }
+
 .welcome::first-letter{
-  font-family: "Lucida Calligraphy";
+  font-style: italic;
   font-size: 1cm;
-  text-shadow: 5px 8px 8px #10454F;
+  text-shadow: 1px 1px 1px #A3AB78;
   font-weight: bold;
   color: #506266;
   text-align: center;
@@ -105,7 +104,6 @@ body {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    font-family:"Lucida Calligraphy";
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -201,7 +199,6 @@ body {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    font-family:"Lucida Calligraphy";
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
