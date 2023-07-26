@@ -385,33 +385,34 @@ function renderQuestion(currentquestion) {
     divQuestion.appendChild(answerButtons);
     button1.addEventListener("click", function () {
             if (currentquestion.answers[0].correct) {
-                console.log("correct");
+                button1.classList.add("btn-answer-correct");
                 score++;
             }
             else {
-                console.log("incorrect");
+                button1.classList.add("btn-answer-wrong");
+
             }
         nextQuestion();
         }
     );
     button2.addEventListener("click", function () {
             if (currentquestion.answers[1].correct) {
-                console.log("correct");
+                button2.classList.add("btn-answer-correct");
                 score++;
             }
             else {
-                console.log("incorrect");
+                button2.classList.add("btn-answer-wrong");
             }
         nextQuestion();
         }
     );
     button3.addEventListener("click", function () {
             if (currentquestion.answers[2].correct) {
-                console.log("correct");
+                button3.classList.add("btn-answer-correct");
                 score++;
             }
             else {
-                console.log("incorrect");
+                button3.classList.add("btn-answer-wrong");
             }
         nextQuestion();
         }
@@ -419,11 +420,11 @@ function renderQuestion(currentquestion) {
     );
     button4.addEventListener("click", function () {
             if (currentquestion.answers[3].correct) {
-                console.log("correct");
+                button4.classList.add("btn-answer-correct");
                 score++;
             }
             else {
-                console.log("incorrect");
+                button4.classList.add("btn-answer-wrong");
             }
         nextQuestion();
         }
@@ -433,6 +434,7 @@ function renderQuestion(currentquestion) {
 
 }
 function nextQuestion() {
+
     cursor++;
     if (cursor === questions.length) {
         document.getElementsByClassName("question-section")[0].remove();

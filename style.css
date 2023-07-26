@@ -98,6 +98,12 @@ body {
     font-size: 0.8em;
   }
 }
+.btn-answer-wrong{
+    background-color: darkred;
+}
+.btn-answer-correct{
+    background-color: darkgreen;
+}
 .btn-start{
     background-color: #506266;
     border: none;
